@@ -30,10 +30,10 @@ function Home() {
 
   return (
     <>
-      <h1>Homeページ</h1>
+      <h1>ReactHooksハンズオンページ</h1>
       <button onClick={clickedToHomeBtn}>Homeボタン</button>
-      <button onClick={clickedToPage1Btn}>Page1遷移ボタン</button>
-      <button onClick={clickedToPage2Btn}>Page2遷移ボタン</button>
+      <button onClick={clickedToPage1Btn}>useStateページ</button>
+      <button onClick={clickedToPage2Btn}>useRefページ</button>
       <button onClick={clickedToPage3Btn}>Page3遷移ボタン</button>
       <button onClick={clickedToPage4Btn}>Page4遷移ボタン</button>
       <button onClick={clickedToPage5Btn}>Page5遷移ボタン</button>
