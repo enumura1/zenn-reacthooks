@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
   const navigate = useNavigate();
 
+  const clickedToHomeBtn = () => {
+    navigate('/');
+  };
+
   const clickedToPage1Btn = () => {
     navigate('page1');
   };
@@ -26,12 +30,13 @@ function Home() {
 
   return (
     <div className='mainContainer'>
-      <h1>ReactHooksハンズオンページ</h1>
+      <h1>Homeページ</h1>
+      <button onClick={clickedToHomeBtn}>Homeボタン</button>
       <button onClick={clickedToPage1Btn}>useStateページ</button>
       <button onClick={clickedToPage2Btn}>useRefページ</button>
-      <button onClick={clickedToPage3Btn}>Page3遷移ボタン</button>
-      <button onClick={clickedToPage4Btn}>Page4遷移ボタン</button>
-      <button onClick={clickedToPage5Btn}>Page5遷移ボタン</button>
+      <button onClick={clickedToPage3Btn}>useContextページ</button>
+      <button onClick={clickedToPage4Btn}>カスタムフックページ</button>
+      <button onClick={clickedToPage5Btn}>useNavigateページ</button>
     </div>
   );
 };
