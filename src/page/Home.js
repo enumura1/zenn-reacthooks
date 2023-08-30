@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 
+// material iconのインポート
+import Brightness2Icon from '@mui/icons-material/Brightness2';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+
 // 外部ファイルのインポート
 import '../css/Home.css';
 
@@ -13,10 +17,6 @@ function Home() {
 
   const toggleSwitch = () => {
     setSwitchChecked(!switchChecked);
-  };
-
-  const clickedToHomeBtn = () => {
-    navigate('/');
   };
 
   const clickedToPage1Btn = () => {
@@ -40,22 +40,21 @@ function Home() {
   };
 
   return (
-    <>
+    <div className={switchChecked ? "darkModeMain" : "lightModeMain"} >
       <div className='themeSwitch'>
         <FormControlLabel
           control={<Switch checked={switchChecked} onChange={toggleSwitch} />}
-          label={switchChecked ? 'Checked Label' : 'Unchecked Label'} />
+          label={switchChecked ? <Brightness2Icon /> : <WbSunnyIcon />} />
       </div>
-      <div className='mainContainer'>
+      <div className='hookBtnContainer'>
         <h1>Homeページ</h1>
-        <button onClick={clickedToHomeBtn}>Homeボタン</button>
-        <button onClick={clickedToPage1Btn}>useStateページ</button>
-        <button onClick={clickedToPage2Btn}>useRefページ</button>
-        <button onClick={clickedToPage3Btn}>useContextページ</button>
-        <button onClick={clickedToPage4Btn}>カスタムフックページ</button>
-        <button onClick={clickedToPage5Btn}>useNavigateページ</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage1Btn}>useStateページ</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage2Btn}>useRefページ</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage4Btn}>カスタムフックページ</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage5Btn}>useNavigateページ</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage3Btn}>useContextページ</button>
       </div>
-    </>
+    </div>
   );
 };
 
