@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './page/Home';
 import Page1 from './page/page1';
 import Page2 from './page/page2';
-import Page3 from './page/page3';
+import Page3 from './page/page3_1';
 import Page4 from './page/page4';
 import Page5 from './page/page5';
 
