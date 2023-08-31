@@ -14,7 +14,7 @@ function Page1() {
 
     return (
         <div className='page1Contaienr'>
-            <h1>useState</h1>
+            <h1>useState Page</h1>
             <div>
                 <p>Count: {countedNumber}</p>
                 <button onClick={() => setCount(countedNumber + 1)}>Increment</button>

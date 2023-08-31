@@ -35,7 +35,7 @@ function Home() {
         <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page1')}>useState Page</button>
         <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page2')}>useEffect Page</button>
         <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page3')}>useContext Page</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page4')}>use Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page4')}>useRef Page</button>
         <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page5')}>Custom Hook Page</button>
       </div>
     </div>

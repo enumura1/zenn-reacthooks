@@ -20,7 +20,7 @@ function Page4() {
 
     return (
         <div className='page1Contaienr'>
-            <h1>Page4</h1>
+            <h1>useRef Page</h1>
             <div>
                 <p>Count: {countRef.current}</p>
                 <button onClick={incrementCount}>1ずつカウントアップ</button>

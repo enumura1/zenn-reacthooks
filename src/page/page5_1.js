@@ -14,7 +14,7 @@ function Page5() {
 
     return (
         <div className='page1Contaienr'>
-            <h1>Page5</h1>
+            <h1>Custom Hook Page</h1>
             <div>
                 <h1>カウンター</h1>
                 <p>現在の数値: {count}</p>

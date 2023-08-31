@@ -22,7 +22,7 @@ function Page3() {
 
     return (
         <div className='page1Contaienr'>
-            <h1>Page3</h1>
+            <h1>useContext Page</h1>
             <HogeContext.Provider value={hogeData}>
                 <ShowData />
             </HogeContext.Provider>

@@ -18,7 +18,7 @@ function Page2() {
 
     return (
         <div className='page1Contaienr'>
-            <h1>useRef</h1>
+            <h1>useEffect Page</h1>
             <div>
                 <p>Count: {count}</p>
                 <button onClick={() => setCount(count + 1)}>Increment</button>
