@@ -1,0 +1,21 @@
+.page1Contaienr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toHomeBtn {
+    background: linear-gradient(to bottom, #c2e0ff, #97cafd);
+    color: #0080ff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10%;
+    font-size: 16px;
+    box-shadow: 4px 4px 6px #447fbb;
+    transition: 0.1s all linear;
+    border: 1px solid #1476d7;
+}

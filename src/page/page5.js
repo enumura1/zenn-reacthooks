@@ -1,6 +1,7 @@
-import '../App.css';
-
 import { useNavigate } from 'react-router-dom';
+
+// 外部ファイルのインポート
+import '../page.css';
 
 function Page5() {
     const navigate = useNavigate();
