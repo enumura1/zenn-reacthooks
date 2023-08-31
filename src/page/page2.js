@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // 外部ファイルのインポート
@@ -9,10 +10,20 @@ function Page2() {
         navigate('/');
     };
 
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log(`countの値: ${count}`);
+    }, [count]);
+
     return (
-        <div>
+        <div className='page1Contaienr'>
             <h1>useRef</h1>
-            <button onClick={clickedToHomeBtn}>Homeに戻る</button>
+            <div>
+                <p>Count: {count}</p>
+                <button onClick={() => setCount(count + 1)}>Increment</button>
+            </div>
+            <button className='toHomeBtn' onClick={clickedToHomeBtn}>Homeに戻る</button>
         </div>
     );
 };
