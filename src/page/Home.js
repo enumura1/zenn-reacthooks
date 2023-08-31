@@ -19,24 +19,8 @@ function Home() {
     setSwitchChecked(!switchChecked);
   };
 
-  const clickedToPage1Btn = () => {
-    navigate('page1');
-  };
-
-  const clickedToPage2Btn = () => {
-    navigate('page2');
-  };
-
-  const clickedToPage3Btn = () => {
-    navigate('page3');
-  };
-
-  const clickedToPage4Btn = () => {
-    navigate('page4');
-  };
-
-  const clickedToPage5Btn = () => {
-    navigate('page5');
+  const clickedToPageBtn = (pageName) => {
+    navigate(pageName);
   };
 
   return (
@@ -48,11 +32,11 @@ function Home() {
       </div>
       <div className='hookBtnContainer'>
         <h1>Home Page</h1>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage1Btn}>useState Page</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage2Btn}>useRef Page</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage4Btn}>Custom Hook Page</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage5Btn}>useNavigate Page</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage3Btn}>useContext Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page1')}>useState Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page2')}>useRef Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page3')}>Custom Hook Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page4')}>useNavigate Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={() => clickedToPageBtn('page5')}>useContext Page</button>
       </div>
     </div>
   );
