@@ -32,7 +32,7 @@ body {
 .darkModeButton {
     background: linear-gradient(to bottom, #1476d7, #3e63ca);
     color: white;
-    border: none;
+    font-weight: bold;
     padding: 10px 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -40,6 +40,7 @@ body {
     font-size: 16px;
     box-shadow: 0px 0px 8px 3px #52a4f7 inset;
     transition: 0.1s all linear;
+    border: 1px solid #86bff7;
 }
 
 .darkModeButton:hover {
@@ -48,19 +49,20 @@ body {
 }
 
 .lightModeButton {
-    background: linear-gradient(to bottom, #d7e9fc, #acb4ca);
-    color: #1a1e2e;
-    border: none;
+    background: linear-gradient(to bottom, #c2e0ff, #97cafd);
+    color: #0080ff;
+    font-weight: bold;
     padding: 10px 20px;
     border-radius: 12px;
     cursor: pointer;
     margin-top: 30px;
     font-size: 16px;
-    box-shadow: 0px 0px 8px 3px #7497ba;
+    box-shadow: 4px 4px 6px #447fbb;
     transition: 0.1s all linear;
+    border: 1px solid #1476d7;
 }
 
 .lightModeButton:hover {
-    background: linear-gradient(to bottom, #5daeff, #627fce);
+    background: linear-gradient(to bottom, #e6f1fc, #c7dff7);
     transform: scale(1.04);
 }

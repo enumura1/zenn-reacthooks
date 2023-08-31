@@ -47,12 +47,12 @@ function Home() {
           label={switchChecked ? <Brightness2Icon /> : <WbSunnyIcon />} />
       </div>
       <div className='hookBtnContainer'>
-        <h1>Homeページ</h1>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage1Btn}>useStateページ</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage2Btn}>useRefページ</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage4Btn}>カスタムフックページ</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage5Btn}>useNavigateページ</button>
-        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage3Btn}>useContextページ</button>
+        <h1>Home Page</h1>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage1Btn}>useState Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage2Btn}>useRef Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage4Btn}>Custom Hook Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage5Btn}>useNavigate Page</button>
+        <button className={switchChecked ? "darkModeButton" : "lightModeButton"} onClick={clickedToPage3Btn}>useContext Page</button>
       </div>
     </div>
   );
