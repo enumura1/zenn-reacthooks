@@ -5,7 +5,7 @@ import Page1 from './page/page1';
 import Page2 from './page/page2';
 import Page3 from './page/page3_1';
 import Page4 from './page/page4';
-import Page5 from './page/page5';
+import Page5 from './page/page5_1';
 
 
 function App() {

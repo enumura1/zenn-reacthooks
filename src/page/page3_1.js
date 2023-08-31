@@ -2,7 +2,7 @@ import React, { createContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // 外部ファイルのインポート
-import '../page.css';
+import '../css/page.css';
 import ShowData from './page3_2';
 
 // 共有するデータ

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // 外部ファイルのインポート
-import '../page.css';
+import '../css/page.css';
 
 function Page2() {
     const navigate = useNavigate();
