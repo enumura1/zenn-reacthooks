@@ -21,6 +21,7 @@ function Page4() {
     return (
         <div className='page1Contaienr'>
             <h1>useRef Page</h1>
+            <h2>検証ツールからログの確認ができます</h2>
             <div>
                 <p>Count: {countRef.current}</p>
                 <button onClick={incrementCount}>1ずつカウントアップ</button>
