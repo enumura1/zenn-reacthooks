@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './page/Home';
+import Home from './page/home';
 import Page1 from './page/page1';
 import Page2 from './page/page2';
 import Page3 from './page/page3_1';
@@ -10,7 +10,6 @@ import Page5 from './page/page5_1';
 
 function App() {
     return (
-        // BrowserRouterでラップする
         <BrowserRouter>
             {/* ルーティング */}
             <Routes>
